@@ -8,7 +8,7 @@ export default function Home() {
 
   // Smooth scroll functionality
   useEffect(() => {
-    const handleSmoothScroll = (e) => {
+    const handleSmoothScroll = (e:any) => {
       if (e.target.closest('a[href^="#"]')) {
         e.preventDefault();
         const targetId = e.target.getAttribute('href');
